@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nametag {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    background: rgb(186, 218, 197);
+    color: #4B644A;
+}
+
+#app {
+    width: 950px;
+    margin: auto;
+}
+.currency-container, .producers-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marketing-currency,
+ .artist-currency,
+  .lootboxTeam-currency {
+    width: 300px;
+    text-align: center;
+    padding: 40px 10px;
+    background: #89A894;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.3em;
+}
+
+.generators-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.generator-lootboxTeam-generator {
+    margin-top: 0px;
+    width: 300px;
+    background: #443c87;
+    color: #63b7ce;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: 2px,solid,#63b7ce;
+}
+
+.generator-marketing-generator {
+    margin-top: 0px;
+    width: 300px;
+    background: #882615;
+    color: #b7321b;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: 2px, solid,#b7321b;
+}
+
+.generator-artist-generator {
+    margin-top: 0px;
+    width: 300px;
+    background: #41fc8f;
+    color: #b0fcd0;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: 2px, solid,#b0fcd0;
+}
+
+.generator h4 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.generator h2 {
+    margin-top: 0px;
+}
+
+.generator-cost {
+    display: block;
+}
+
+.add-generator-button h1 {
+    margin: 0;
+}
+
+.add-generator-button {
+    width: 300px;
+    background: black;
+    color: rgb(185, 185, 185);
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(185, 185, 185);
+}
+
+.generator-marketing--unavailable{
+    margin-top: 0px;
+    width: 300px;
+    background: #722113;
+    color: #882615;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: #882615;
+}
+.generator-artist--unavailable{
+    margin-top: 0px;
+    width: 300px;
+    background: #35ca73;
+    color: #41fc8f;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: #41fc8f;
+}
+.generator-lootboxTeam--unavailable{
+    margin-top: 0px;
+    width: 300px;
+    background: #37316d;
+    color: #443c87;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: 2px,solid,#443c87;
+}
+.add-generator-button--unavailable {
+    width: 300px;
+    background: rgb(185, 185, 185);
+    color: black;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
