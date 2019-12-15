@@ -9,6 +9,9 @@
 </head>
 <body>
   <div id="app">
+    <div class="nametag">
+        Made by Roy Teutsch and Matan PerelMuter
+    </div>
     <div class="currency-container">
       <div class="marketing-currency">
         There is currently {{ format(player.money) }} carbon in the atmosphere
@@ -23,8 +26,8 @@
     <div class="producers-container">
       <div class="generators-container">
         <div
-        class="generator marketing-generator"
-        :class="{ 'generator--unavailable': !generator.canBuy}"
+        class="generator-marketing-generator"
+        :class="{ 'generator-marketing--unavailable': !generator.canBuy}"
         v-for="generator in player.marketing">
           <generator :generator="generator"/>
         </div>
@@ -32,8 +35,8 @@
       </div>
       <div class="generators-container">
         <div 
-        class="generator artist-generator" 
-        :class="{ 'generator--unavailable': !generator.canBuy}"
+        class="generator-artist-generator" 
+        :class="{ 'generator-artist--unavailable': !generator.canBuy}"
         v-for="generator in player.artists">
           <generator :generator="generator"/>
         </div>
@@ -41,8 +44,8 @@
       </div>
       <div class="generators-container">
         <div 
-        class="generator lootboxTeam-generator" 
-        :class="{ 'generator--unavailable': !generator.canBuy}"
+        class="generator-lootboxTeam-generator" 
+        :class="{ 'generator-lootboxTeam--unavailable': !generator.canBuy}"
         v-for="generator in player.lootboxTeam">
           <generator :generator="generator"/>
         </div>
