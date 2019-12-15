@@ -3,6 +3,13 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+.nametag {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    background: rgb(186, 218, 197);
+    color: #4B644A;
+}
 
 #app {
     width: 950px;
@@ -31,10 +38,11 @@
     margin-top: 40px;
 }
 
-.generator {
+.generator-lootboxTeam-generator {
+    margin-top: 0px;
     width: 300px;
-    background: #4B644A;
-    color: white;
+    background: #443c87;
+    color: #63b7ce;
     height: 130px;
     text-align: center;
     padding: 15px;
@@ -43,10 +51,39 @@
     user-select: none;
     border-radius: 5px;
     transition-duration: .12s;
+    border: 2px,solid,#63b7ce;
 }
 
-.generator:not(:first-child) {
-    border-top: 2px solid #89A894;
+.generator-marketing-generator {
+    margin-top: 0px;
+    width: 300px;
+    background: #882615;
+    color: #b7321b;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: 2px, solid,#b7321b;
+}
+
+.generator-artist-generator {
+    margin-top: 0px;
+    width: 300px;
+    background: #41fc8f;
+    color: #b0fcd0;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: 2px, solid,#b0fcd0;
 }
 
 .generator h4 {
@@ -68,8 +105,8 @@
 
 .add-generator-button {
     width: 300px;
-    background: #4B644A;
-    color: white;
+    background: black;
+    color: rgb(185, 185, 185);
     height: 130px;
     text-align: center;
     padding: 15px;
@@ -81,11 +118,68 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-top: 2px solid #89A894;
+    border: 2px solid rgb(185, 185, 185);
 }
 
-.generator--unavailable,
+.generator-marketing--unavailable{
+    margin-top: 0px;
+    width: 300px;
+    background: #722113;
+    color: #882615;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: #882615;
+}
+.generator-artist--unavailable{
+    margin-top: 0px;
+    width: 300px;
+    background: #35ca73;
+    color: #41fc8f;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: #41fc8f;
+}
+.generator-lootboxTeam--unavailable{
+    margin-top: 0px;
+    width: 300px;
+    background: #37316d;
+    color: #443c87;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    border: 2px,solid,#443c87;
+}
 .add-generator-button--unavailable {
-    background: #341C1C;
-    cursor: default;
+    width: 300px;
+    background: rgb(185, 185, 185);
+    color: black;
+    height: 130px;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition-duration: .12s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
 }
