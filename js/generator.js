@@ -50,13 +50,13 @@ const lootboxTeam_names = ["Energy Mk."]
 function generateGeneratorName(tier, type) {
   switch (type) {
     case "marketing":
-    return (marketing_names[tier%marketing_names.length] + (marketing_names.length - 1));
+    return (marketing_names[tier%marketing_names.length] + (tier+1));
 
     case "artists":
-    return (artist_names[tier%artist_names.length] + (artist_names.length - 1));
+    return (artist_names[tier%artist_names.length] +(tier+1));
 
     case "lootboxTeam":
-    return (lootboxTeam_names[tier%lootboxTeam_names.length] + (lootboxTeam_names.length - 1));
+    return (lootboxTeam_names[tier%lootboxTeam_names.length] + (tier+1));
   }
 }
 
